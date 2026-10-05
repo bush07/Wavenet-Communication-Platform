@@ -1,143 +1,168 @@
-# Wavenet Frontend
+# Wavenet Communication Platform
 
-Modern, AI-driven telephony and communication platform built with Next.js 14, TypeScript, and Tailwind CSS.
+A modern, responsive frontend for an AI-driven telephony and communication platform, built with Next.js, TypeScript, Tailwind CSS, and modern UI technologies.
 
-## 🚀 Features
+## 🌐 Live Demo
 
-- **Multi-language Support**: Swedish (sv) and English (en)
-- **Modern UI**: Glassmorphism, gradients, and smooth animations
-- **Responsive Design**: Mobile-first approach with adaptive layouts
-- **3D Visualizations**: Interactive globe with Three.js
-- **Analytics**: Charts and data visualization with Recharts
-- **SEO Optimized**: Server-side rendering and metadata
-- **Type Safe**: Full TypeScript coverage
+https://wavenet-front-end-234.vercel.app/
 
-## 📦 Tech Stack
+## ✨ Features
 
-- **Framework**: Next.js 14.2.10 (App Router)
-- **Language**: TypeScript 5
-- **Styling**: Tailwind CSS 4
-- **UI Components**: Radix UI
-- **3D Graphics**: Three.js, React Three Fiber
-- **Charts**: Recharts
-- **Icons**: Lucide React
-- **Analytics**: Vercel Analytics
+- 🌍 **Multi-language Support** — Swedish and English
+- 📱 **Responsive Design** — Mobile-first layouts across devices
+- 🎨 **Modern UI** — Glassmorphism, gradients, animations, and interactive elements
+- 🌐 **3D Globe Visualization** — Interactive globe powered by Three.js
+- 📊 **Data Visualization** — Interactive charts using Recharts
+- ⚡ **Next.js App Router** — Modern routing and server-side rendering
+- 🔍 **SEO Optimized** — Metadata and structured page configuration
+- 🔒 **Type Safe** — Built with TypeScript
+- 🧩 **Reusable Components** — Modular and maintainable component architecture
+- 📈 **Vercel Analytics** — Website analytics integration
 
-## 🛠️ Getting Started
+## 🛠️ Tech Stack
+
+| Technology | Usage |
+|---|---|
+| **Next.js 14** | React framework & App Router |
+| **React 18** | UI development |
+| **TypeScript** | Type-safe development |
+| **Tailwind CSS** | Styling & responsive design |
+| **Radix UI** | Accessible UI components |
+| **Three.js** | 3D graphics |
+| **React Three Fiber** | React-based Three.js integration |
+| **Recharts** | Charts & data visualization |
+| **Lucide React** | Icons |
+| **Vercel Analytics** | Website analytics |
+
+## 📌 Pages & Modules
+
+The platform includes multiple sections designed around an AI-powered communication ecosystem:
+
+- Home
+- About
+- Wavenet Care
+- Wavenet Connect
+- Wavenet Mobility
+- AI Solutions
+- Security & ISO Standards
+- Partners
+- Contact
+- Support
+- Help Desk
+- Reseller Program
+- Reseller Benefits
+
+## 📁 Project Structure
+
+├── app/
+│   ├── layout.tsx
+│   ├── page.tsx
+│   ├── about/
+│   ├── care/
+│   ├── connect/
+│   ├── mobility/
+│   ├── security/
+│   ├── solutions/
+│   ├── support/
+│   └── reseller/
+│
+├── components/
+│   ├── ui/
+│   ├── globe-card.tsx
+│   ├── language-toggle.tsx
+│   └── mobile-nav.tsx
+│
+├── hooks/
+│   └── use-language.tsx
+│
+├── lib/
+│   ├── translations.ts
+│   └── utils.ts
+│
+├── public/
+│   └── logos/
+│
+└── styles/
+    └── globals.css
+
+## 🚀 Getting Started
 
 ### Prerequisites
 
-- Node.js 18+ 
+- Node.js 18+
 - npm 10+
 
 ### Installation
 
-```bash
-# Install dependencies
+Clone the repository:
+
+git clone https://github.com/bush07/Wavenet-Communication-Platform.git
+
+Navigate to the project:
+
+cd Wavenet-Communication-Platform
+
+Install dependencies:
+
 npm install
 
-# Run development server
+Start the development server:
+
 npm run dev
 
-# Build for production
-npm run build
+Open http://localhost:3000 in your browser.
 
-# Start production server
-npm start
+## 📦 Available Scripts
 
-# Run linter
-npm run lint
-```
+npm run dev      # Start development server
+npm run build    # Create production build
+npm start        # Start production server
+npm run lint     # Run ESLint
 
-### Development
+## 🎯 Technical Highlights
 
-The application will be available at `http://localhost:3000`
+### Internationalization
 
-## 📁 Project Structure
+The application supports both Swedish and English through a centralized translation system.
 
-```
-├── app/                    # Next.js App Router pages
-│   ├── layout.tsx         # Root layout with fonts and providers
-│   ├── page.tsx           # Homepage
-│   ├── about/             # About page
-│   ├── care/              # Wavenet Care product
-│   ├── connect/           # Wavenet Connect product
-│   ├── mobility/          # Wavenet Mobility product
-│   ├── security/          # Security & ISO standards
-│   ├── solutions/         # AI solutions pages
-│   ├── support/           # Support pages
-│   └── reseller/          # Reseller program
-├── components/            # React components
-│   ├── ui/               # UI component library
-│   ├── globe-card.tsx    # 3D Globe component
-│   ├── language-toggle.tsx
-│   └── mobile-nav.tsx    # Mobile navigation
-├── hooks/                 # Custom React hooks
-│   └── use-language.tsx  # Language context and hook
-├── lib/                   # Utility functions
-│   ├── translations.ts   # i18n translations
-│   └── utils.ts          # Helper functions
-├── public/               # Static assets
-│   └── logos/           # Partner logos
-└── styles/              # Global styles
-    └── globals.css      # Tailwind and custom CSS
-```
+### 3D Experience
 
-## 🌍 Deployment
+An interactive 3D globe is implemented using Three.js and React Three Fiber to provide a modern visual experience.
 
-### Vercel (Recommended)
+### Responsive UI
 
-1. Push your code to GitHub
-2. Import your repository on [Vercel](https://vercel.com)
-3. Vercel will automatically detect Next.js and deploy
+The interface follows a mobile-first approach with adaptive layouts for desktop, tablet, and mobile.
 
-### Manual Deployment
+### Component Architecture
 
-```bash
-# Build the application
-npm run build
+Reusable React components and UI primitives help maintain consistency and simplify future development.
 
-# The output will be in the .next folder
-# Deploy the entire project to your hosting provider
-```
+### Data Visualization
 
-## 🎨 Customization
+Recharts is used to create interactive charts and analytics-focused visualizations.
 
-### Colors & Theme
+## 📱 Responsive Design
 
-Edit `app/globals.css` to customize the color scheme. The project uses CSS custom properties for theming.
+The application is designed to provide a consistent experience across:
 
-### Translations
+- 💻 Desktop
+- 📱 Mobile
+- 📲 Tablet
 
-Add or modify translations in `lib/translations.ts`:
+## 👩‍💻 About the Developer
 
-```typescript
-export const translations = {
-  sv: { /* Swedish translations */ },
-  en: { /* English translations */ }
-}
-```
+**Bushra Inamdar**
 
-### Pages
+Computer Engineering graduate focused on building modern web applications using React, Next.js, Node.js, TypeScript, and AI-powered technologies.
 
-Add new pages in the `app/` directory following Next.js App Router conventions.
 
-## 📝 Environment Variables
+## 🔗 Connect With Me
 
-No environment variables are required for basic functionality. All configuration is in `next.config.mjs`.
+- GitHub: https://github.com/bush07
+- LinkedIn: https://www.linkedin.com/in/bushra-inamdar07
 
-## 🔧 Configuration Files
 
-- `next.config.mjs` - Next.js configuration
-- `tsconfig.json` - TypeScript configuration
-- `tailwind.config.js` - Tailwind CSS configuration (using v4 @import in CSS)
-- `postcss.config.mjs` - PostCSS configuration
-- `eslint.config.mjs` - ESLint configuration
 
-## 📄 License
+---
 
-Private - All rights reserved
-
-## 🤝 Support
-
-For support, email support@wavenet.se or visit our [Help Desk](/support/helpdesk).
+⭐ If you found this project interesting, feel free to explore the live demo and other projects on my GitHub profile.
